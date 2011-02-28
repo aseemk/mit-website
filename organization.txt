@@ -1,0 +1,67 @@
+main
+
+  home
+
+  resume
+
+  contact
+
+
+
+software
+
+  projects
+
+    hyperdrive
+
+    frost
+
+    gizmoball
+
+    solobot
+
+    pong++ dx
+
+    chememory
+
+  articles
+
+    firefox extension development tutorial
+
+    ubuntu setup tutorial
+
+    half-life 2 modding tutorial
+
+
+
+music
+
+  compositions
+
+    jazz big band
+      culmination suite no. 1
+      blues in the key of CM
+      written records
+      at first sight
+      desert life
+
+    jazz combo
+      metamorphosis
+      anchor this
+      untitled cha-cha
+      base of contact
+      got it
+      pantherific
+
+    non-jazz large ensemble
+      sear
+
+    non-jazz chamber ensemble
+      precipitous conversations
+      magnum
+      a lullaby
+      the hunt
+
+  library
+
+    ???

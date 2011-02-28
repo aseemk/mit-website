@@ -1,0 +1,12 @@
+From: [required-email]
+To: akishore@mit.edu
+Subject: (Aseem Kishore's homepage) [required-subject]
+Errors-To: akishore@MIT.EDU
+
+From Aseem Kishore's homepage, [required-name] says:
+
+[required-body]
+
+----
+NOTE: This message was sent using a WWW form. The address [required-email]
+was typed manually, and may easily be incorrect.

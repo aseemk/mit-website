@@ -1,0 +1,174 @@
+/*************************************************************************
+ main.css
+ Main style sheet for Aseem Kishore's homepage.
+ 
+ Author: Aseem Kishore
+ Email: aseem.kishore@gmail.com
+ *************************************************************************/
+
+
+/** OVERALL LOOK-AND-FEEL **/
+
+/*
+  The page is white, and the text is black. The links are always blue.
+*/
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "trebuchet ms", verdana, tahoma, arial, sans-serif;
+  font-size: 13px;
+  color: black;
+  background-image: url(../images/38original.gif);
+}
+
+#body {
+  padding: 10px 20px;
+  /* semi-transparent white background on top of page background */
+  background-image: url(../images/75p_white.png);
+  /* IE hack, source: http://www.daltonlp.com/view/217 */
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    enabled=true, sizingMethod=scale, src='/75p_white.png');
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/** LAYOUT **/
+
+/*
+  This is a 1000px-wide theme. The content is 850px wide. The remaining
+  space is devoted to the menu on the left. Thin black borders separate the
+  header from the remaining page, the footer from the remaining page, and
+  the menu from the content.
+*/
+
+#body {
+  margin-left: auto;  /* these two lines center the content */
+  margin-right: auto;
+  width: 1000px;
+}
+
+#header {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+#menu {
+  float: left;
+  width: 110px;
+  border-right: 1px solid black;
+  margin-right: 24px;
+}
+
+#content {
+  float: right;
+  width: 850px;
+}
+
+#footer {
+  clear: both;
+  width: 850px;
+  border-top: 1px solid black;
+  margin-top: 1em;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+
+
+/** HEADER **/
+
+#header {
+  text-align: center;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+#subtitle {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+
+/** MENU **/
+
+#menu {
+  font-size: 1.2em;
+}
+
+ul {
+  position: relative;
+  left: -30px;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+
+/** FOOTER **/
+
+#footer {
+  text-align: center;
+}
+
+#copyright {
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+
+
+/** CONTENT **/
+
+#photo {
+  float: right;
+  padding-left: 5px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  margin-bottom:10px;
+  background-color: white;
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+.section_header {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-indent: -15px;
+}
+
+.section_subheader {
+  font-weight: bold;
+}
+
+
+/** Text **/
+
+.old {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.new {
+  color: red;
+}
+
+.message {
+  color: red;
+  font-weight: bold;
+}

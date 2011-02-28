@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<head>
+
+<title>Aseem Kishore - Contact</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" media="all" href="styles/main.css" />
+<link rel="stylesheet" type="text/css" media="all" href="styles/contact.css" />
+
+<!--[if IE]>
+  <link rel="stylesheet" type="text/css" media="all" href="styles/main_ie.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="styles/contact_ie.css" />
+<![endif]-->
+
+<script type="text/javascript">
+
+// Constants
+var MESSAGE_ID = "contact_message";
+var SUCCESS_ID = "hiddenSuccessInput";
+var SUCCESS_ARG = "success";
+var FORM_ID = "contact_form";
+var NAME_INPUT = "required-name";
+var EMAIL_INPUT = "required-email";
+var SUBJECT_INPUT = "required-subject";
+var MESSAGE_INPUT = "required-body";
+
+// Variables
+var messageNode;
+var successNode;
+var form;
+var nameInput;
+var emailInput;
+var subjectInput;
+var messageInput;
+
+function initializeForm() {
+	messageNode = document.getElementById(MESSAGE_ID);
+	successNode = document.getElementById(SUCCESS_ID);
+	form = document.getElementById(FORM_ID);
+	nameInput = form[NAME_INPUT];
+	emailInput = form[EMAIL_INPUT];
+	subjectInput = form[SUBJECT_INPUT];
+	messageInput = form[MESSAGE_INPUT];
+	
+	// if we're already at success, set the message
+	if (document.location.search == "?" + SUCCESS_ARG) {
+	  setMessage("Message sent!");
+	}
+	
+	// regardless, always set the form correctly
+	form.onsubmit = formIsValid;
+	form.onreset = clearMessage;
+  successNode.value = document.location + "?" + SUCCESS_ARG;
+}
+
+function setMessage(message) {
+  var textNode = document.createTextNode(message);
+  while (messageNode.firstChild) {
+    messageNode.removeChild(messageNode.firstChild);
+  }
+  messageNode.appendChild(textNode);
+}
+
+function clearMessage() {
+  if (messageInput.value) {
+    var clear = confirm("You've entered a message.\n" +
+                        "Are you sure you want to clear the form?");
+    if (!clear) {
+      return false;
+    }
+  }
+  setMessage("");
+  return true;
+}
+
+function formIsValid() {
+  if (!nameInput.value) {
+    setMessage("You must enter your name.");
+    return false;
+  } else if (!emailInput.value) {
+    setMessage("You must enter an email address.");
+    return false;
+  } else if (!isValidEmail(emailInput.value)) {
+    setMessage("You must enter a valid email address.");
+    return false;
+  } else if (!subjectInput.value) {
+    setMessage("You must enter a subject.");
+    return false;
+  } else if (!messageInput.value) {
+    setMessage("You must enter a message!");
+    return false;
+  }
+  return true;
+}
+
+function isValidEmail(email) {
+  return /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/.test(email);
+}
+
+// attach script
+if (window.addEventListener) {
+  window.addEventListener("load", initializeForm, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", initializeForm);
+}
+</script>
+
+</head>
+
+
+<body>
+
+<div id="body">
+
+  <div id="header">
+    <div id="title">Aseem Kishore</div>
+    <div id="subtitle"><a href="http://web.mit.edu/">mit.edu</a> &gt; <a href="./">akishore</a></div>
+  </div>
+  
+  <div id="menu">
+    <ul>
+      <li><a id="menu_home" href="index.html">Home</a></li>
+      <li><a id="menu_resume" href="resume.html">Resume</a></li>
+      <li><a id="menu_schedule" href="schedule.html">Schedule</a></li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  
+  <div id="content">
+    
+    <div class="section">
+      <p class="section_header">Contact</p>
+      <p>To contact me, send an email to <a href="mailto:akishore@mit.edu">akishore@mit.edu</a>, or use the form below.</p>
+      <p>All fields are required.</p>
+      <form id="contact_form" method="post"
+          action="http://web.mit.edu/bin/cgiemail/afs/athena.mit.edu/user/a/k/akishore/www/contact.txt">
+        <div>
+          <input type="hidden" id="hiddenSuccessInput" />
+        </div>
+        <div id="contact_name_field" class="contact_field">
+          <label>Name:</label>
+          <input type="text" name="required-name" />
+        </div>
+        <div id="contact_email_field" class="contact_field">
+          <label>Email:</label>
+          <input type="text" name="required-email" />
+        </div>
+        <div id="contact_subject_field" class="contact_field">
+          <label>Subject:</label>
+          <input type="text" name="required-subject" />
+        </div>
+        <div id="contact_body_field" class="contact_field">
+          <label>Message:</label>
+          <textarea name="required-body" cols="50" rows="10"></textarea>
+        </div>
+        <div id="contact_submit">
+          <input type="submit" value="Send" />
+          <input type="reset" value="Clear" />
+          <span id="contact_message" class="message"></span>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+  
+  <div id="footer">
+    <div id="copyright">
+      <p>Site &copy; 2008 by Aseem Kishore. Background from <a href="http://www.kollermedia.at/pattern4u">Kollermedia.at</a>.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+
+
+</html>

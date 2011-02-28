@@ -1,0 +1,61 @@
+/*************************************************************************
+ contact.css
+ Style sheet for Contact page on Aseem Kishore's homepage.
+ 
+ Author: Aseem Kishore
+ Email: aseem.kishore@gmail.com
+ *************************************************************************/
+
+
+#contact_form {
+  margin-top: 2em;
+  width: 556px;
+}
+
+.contact_field {
+  clear: both;
+}
+
+.contact_field label {
+  float: left;
+  width: 125px;
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.contact_field input {
+  float: right;
+  width: 200px;
+  margin-right: 200px;
+  margin-bottom: 1em;
+  border: 1px inset black;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.contact_field textarea {
+  float: right;
+  width: 400px;
+  height: 10em;
+  margin-bottom: 1em;
+  border: 1px inset black;
+  font-family: "trebuchet ms", verdana, tahoma, arial, sans-serif;
+  font-size: 1em;
+  padding: 2px;
+}
+
+#contact_submit {
+  clear: both;
+  margin-left: 150px;
+}
+
+#contact_submit input {
+  width: 5em;
+  margin-right: 1em;
+}
+
+#contact_message {
+  text-align: left;
+}

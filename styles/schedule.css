@@ -1,0 +1,101 @@
+/*************************************************************************
+ schedule.css
+ Style sheet for Schedule page on Aseem Kishore's homepage.
+ 
+ Author: Aseem Kishore
+ Email: aseem.kishore@gmail.com
+ *************************************************************************/
+
+
+/** OVERALL **/
+
+#schedule_table {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 2px;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+#schedule_table td {
+  width: 100px;
+  margin: 1px;
+  padding: 1px;
+}
+
+#schedule_days_row {
+  font-weight: bold;
+}
+
+#schedule_table td:first-child { /* time column */
+  font-weight: bold;
+}
+
+
+/** CLASSES **/
+
+.schedule_class_cell {
+  border: 1px solid black !important;
+}
+
+.schedule_6833_cell {
+  background-color: #C0E0FF;
+}
+
+.schedule_6831_cell {
+  background-color: #A0FFA0;
+}
+
+.schedule_6005_cell {
+  background-color: #FFFFA0;
+}
+
+.schedule_6087_cell {
+  background-color: #FFA060;
+}
+
+.schedule_jazz_cell {
+  background-color: #FFA0C0;
+}
+
+
+/** SHADING **/
+
+#schedule_9am_row,
+#schedule_10am_row,
+#schedule_11am_row,
+#schedule_12pm_row,
+#schedule_1pm_row,
+#schedule_2pm_row,
+#schedule_3pm_row,
+#schedule_4pm_row,
+#schedule_5pm_row,
+#schedule_6pm_row,
+#schedule_7pm_row,
+#schedule_8pm_row,
+#schedule_9pm_row,
+#schedule_10pm_row,
+#schedule_11pm_row
+{
+  background-color: #FCFCFC;
+}
+
+#schedule_days_row,
+#schedule_930am_row,
+#schedule_1030am_row,
+#schedule_1130am_row,
+#schedule_1230pm_row,
+#schedule_130pm_row,
+#schedule_230pm_row,
+#schedule_330pm_row,
+#schedule_430pm_row,
+#schedule_530pm_row,
+#schedule_630pm_row,
+#schedule_730pm_row,
+#schedule_830pm_row,
+#schedule_930pm_row,
+#schedule_1030pm_row,
+#schedule_1130pm_row
+{
+  background-color: #F0F0F0;
+}

@@ -1,0 +1,23 @@
+/*************************************************************************
+ main_ie.css
+ Main IE style sheet for Aseem Kishore's homepage.
+ 
+ Author: Aseem Kishore
+ Email: aseem.kishore@gmail.com
+ *************************************************************************/
+
+
+/** LAYOUT **/
+
+#menu {
+  padding-top: 1em;
+}
+
+#content {
+  padding-top: 1.5em;
+}
+
+#footer {
+  padding-top: 1em;
+  margin-top: 2em;
+}

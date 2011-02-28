@@ -1,0 +1,156 @@
+/*************************************************************************
+ resume.css
+ Style sheet for Resume page on Aseem Kishore's homepage.
+ 
+ Author: Aseem Kishore
+ Email: aseem.kishore@gmail.com
+ *************************************************************************/
+
+
+/** OVERALL RESUME **/
+
+div#resume {
+  margin-top: 2.5em;
+  border: 1px solid black;
+  padding: 49px;
+  width: 750px;
+  background-color: #ffffff;
+  font-family: verdana, 'trebuchet ms', arial, sans-serif;
+  font-size: 10px;
+}
+
+div#resume > table {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+tr#resume_spacer {
+  text-align: center;
+}
+
+div#resume a {
+  text-decoration: underline;
+}
+
+
+/** RESUME HEADER **/
+
+tr#resume_header {
+  font-size: 0.9em;
+}
+
+td#resume_header_phone {
+  text-align: left;
+  width: 150px;
+}
+
+td#resume_header_address {
+  text-align: center;
+  width: 450px;
+}
+
+td#resume_header_email {
+  text-align: right;
+  width: 150px;
+}
+
+
+/** RESUME TITLE **/
+
+tr#resume_title > td {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-family: georgia, times, serif;
+  font-size: 3em;
+  color: #004080;
+  border-bottom: 2px solid #4080c0;
+}
+
+
+/** RESUME CATEGORIES **/
+
+tr.left > td.value {
+  text-align: left;
+  border-right: 1px solid black;
+}
+
+tr.right > td.value {
+  text-align: right;
+  border-left: 1px solid black;
+}
+
+tr.right > td.name {
+  text-align: left;
+}
+
+tr.left > td.name {
+  text-align: right;
+}
+
+
+/** RESUME NAMES **/
+
+td.name {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  vertical-align: top;
+}
+
+td.name > div {
+  margin-top: 2em;
+  border-top: 1px solid black;
+  padding-top: 5px;
+}
+
+
+/** RESUME VALUES **/
+
+td.value {
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+  line-height: 1.5;
+}
+
+.organization {
+  font-weight: bold;
+}
+
+.position, .skill_type {
+  font-style: italic;
+}
+
+div.description {
+  /*margin-top: 2px;*/
+}
+
+tr.left div.description {
+  margin-left: 20px;
+}
+
+tr.right div.description {
+  margin-right: 20px;
+}
+
+
+/** RESUME FOOTER **/
+
+tr#resume_footer {
+  font-size: 0.9em;
+}
+
+tr#resume_footer > td {
+  text-align: center;
+}
+
+
+/** OLD IMAGE RESUME **/
+
+img#resume {
+  margin-top: 1.5em;
+  padding: 30px;
+  border: 1px solid black;
+}
